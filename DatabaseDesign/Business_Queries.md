@@ -43,3 +43,25 @@ where m.title = 'title'
 order by
   r.username asc;
 ```
+
+### 4
+```sql
+-- return all usernames
+SELECT username
+FROM user;
+```
+
+### 5
+```sql
+-- return all individual numerical ratings of a specific movie
+SELECT
+  rating
+FROM
+  review
+JOIN
+  movie
+ON
+  review.movieID = movie.movieID
+WHERE
+  movie.title = 'Fantastic 4';
+```
