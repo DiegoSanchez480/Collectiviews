@@ -73,3 +73,11 @@ SELECT title, director
 FROM movie
 WHERE genre = "Horror";
 ```
+
+### 7
+```sql
+-- Return the age of a user
+SELECT username, name, birthDate,
+       TIMESTAMPDIFF(YEAR, birthDate, CURDATE()) AS age
+FROM users;
+```
