@@ -65,3 +65,11 @@ ON
 WHERE
   movie.title = 'Fantastic 4';
 ```
+
+### 6
+```sql
+-- Find movies from a specific genre
+SELECT title, director
+FROM movie
+WHERE genre = "Horror";
+```
