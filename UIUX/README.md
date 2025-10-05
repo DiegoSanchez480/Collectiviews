@@ -17,7 +17,7 @@
 
 - 3 - Edit Profile Page
 
-```This wireframe provides a visual for how the profile page will look like. The contents of the page will include a profile picture, user bio, user information, and an edit button at the top right of the screen which will then lead to edit mode. This wireframe is the first step in editing the user's profile page.```
+```This wireframe provides a visual for how the profile page will look like. The contents of the page will include a profile picture, user bio, user information, and an edit button at the top right of the screen which will then lead to edit mode. This wireframe is the first step in editing the user's profile page user flow.```
 
 ![Profile Page](./Images/ProfilePage.png)
 
@@ -25,7 +25,7 @@
 
 - 4 - Edit Profile Page (Edit Mode)
 
-```This wireframe shows how the user will edit their profile page. Afterward, the user will either click save or discard changes which successfuly follows the outlined user flow.```
+```This wireframe shows how the user will edit their profile page. Afterward, the user will either click save or discard changes which successfuly follows the outlined user flow of editing a user profile page.```
 
 ![Profile Page Edit Mode](./Images/ProfilePageEdit.png)
 
