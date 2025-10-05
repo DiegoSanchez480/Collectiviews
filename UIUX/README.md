@@ -49,8 +49,16 @@
 
 - 7 - Search Movie Home Page
 
+```This wireframe shows how the app will respond to user's searching for a movie. When users select the search bar and begin typing, the app will show a popup drop down menu. This menu will contain rows of movies whose titles may resemble the user's search bar input. The user will see a thumbnail of the movie along with the movie's title, release year, and director's name.```
+
+![Search Movie Dropdown](./Images/searchMovieHomePg.png)
+
 
 - 8 - Search Movie Results Page
+
+```This wireframe shows the results page after user presses enter on their search input. The results page will display a larger catalog of movies that may match the user's search input. These movies are shown as thumbnails in a gridbox format.```
+
+![Search Movie Results Page](./Images/searchMovieResultsPg.png)
 
 ## Brand Guide
 ![Brand Guide](./Images/BrandGuide.png)
