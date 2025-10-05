@@ -15,8 +15,22 @@
 
 [Figma Reset Password](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=2-4&t=5b4ifbydU8Wfh5Ru-1)
 
-- 3
-- 4
+- 3 - Edit Profile Page
+
+```This wireframe provides a visual for how the profile page will look like. The contents of the page will include a profile picture, user bio, user information, and an edit button at the top right of the screen which will then lead to edit mode. This wireframe is the first step in editing the user's profile page.```
+
+![Profile Page](./Images/ProfilePage.png)
+
+[Figma Profile Page](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=2-3&p=f&t=jPXlBce4bH4ecFxK-0)
+
+- 4 - Edit Profile Page (Edit Mode)
+
+```This wireframe shows how the user will edit their profile page. Afterward, the user will either click save or discard changes which successfuly follows the outlined user flow.
+
+![Profile Page Edit Mode](./Images/ProfilePageEdit.png)
+
+[Figma Profile Page Edit Mode](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=2-3&p=f&t=jPXlBce4bH4ecFxK-0)
+  
 - 5
 - 6
 - 7
