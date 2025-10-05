@@ -30,11 +30,6 @@
 ![Profile Page Edit Mode](./Images/ProfilePageEdit.png)
 
 [Figma Profile Page Edit Mode](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=2-3&p=f&t=jPXlBce4bH4ecFxK-0)
-  
-- 5
-- 6
-- 7
-- 8
 
 - 5 - Movie Info Page
 
@@ -51,6 +46,9 @@
 ![Review Page](./Images/ReviewWireframe.png)
 
 [Figma Review Page](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=2-2&p=f&t=U8RQ2KmPq2H5JtxF-0)
+
+- 7
+- 8
 
 ## Brand Guide
 ![Brand Guide](./Images/BrandGuide.png)
