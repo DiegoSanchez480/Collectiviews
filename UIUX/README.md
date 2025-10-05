@@ -47,8 +47,10 @@
 
 [Figma Review Page](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=2-2&p=f&t=U8RQ2KmPq2H5JtxF-0)
 
-- 7
-- 8
+- 7 - Search Movie Home Page
+
+
+- 8 - Search Movie Results Page
 
 ## Brand Guide
 ![Brand Guide](./Images/BrandGuide.png)
