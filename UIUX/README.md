@@ -25,7 +25,7 @@
 
 - 4 - Edit Profile Page (Edit Mode)
 
-```This wireframe shows how the user will edit their profile page. Afterward, the user will either click save or discard changes which successfuly follows the outlined user flow.
+```This wireframe shows how the user will edit their profile page. Afterward, the user will either click save or discard changes which successfuly follows the outlined user flow.```
 
 ![Profile Page Edit Mode](./Images/ProfilePageEdit.png)
 
