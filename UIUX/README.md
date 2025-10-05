@@ -1,13 +1,20 @@
 # Group - UI UX
 ## Wireframes
-- 1 - Wireframe Name
+- 1 - Login
 
-```Description```
+```This wireframe is for the generic user login page, it gives the option to navigate to the reset password page if necessary, and the ability to register a new account.```
 
-![Embedded Image](filename.png)
+![Login Wireframe](./Images/LoginWireframe.png)
 
-[Figma Wireframe 1 Name](https://)
-- 2
+[Figma Login Wireframe](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=2-4&t=5b4ifbydU8Wfh5Ru-1)
+- 2 - Reset Password
+
+```This wireframe is for password resets and includes requirements for a new password, and an option to return to the previous menu```
+
+![Reset Password](./Images/ResetPasswordWireframe.png)
+
+[Figma Reset Password](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=2-4&t=5b4ifbydU8Wfh5Ru-1)
+
 - 3
 - 4
 - 5
@@ -15,7 +22,7 @@
 - 7
 - 8
 ## Brand Guide
-![Brand Guide](./Images/BrandGuide.jpg)
+![Brand Guide](./Images/BrandGuide.png)
 [Figma Brand Guide Link](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=48-260&t=wRfWX2jjeckPt4dR-1)
 
 - Personality Notes
