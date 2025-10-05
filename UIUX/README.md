@@ -35,6 +35,23 @@
 - 6
 - 7
 - 8
+
+- 5 - Movie Info Page
+
+```This wireframe displays the individual page containing the information regarding a movie. It will include the movie thumbnail, title, director and release date if applicable, and synopsis. There will also be a button that will take the user to the review page```
+
+![Movie Info Page](./Images/MoviePageWireframe.png)
+
+[Figma Movie Info Page](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=2-2&p=f&t=U8RQ2KmPq2H5JtxF-0)
+
+- 6 - Review Page
+
+```This wireframe shows the popup page that appears when a user wants to review a movie. It shows the thumbnail and title still so a user doesn't forget what they are reviewing. It includes a drop down box for the user to select their rating, as well as a dialogue box where the user can type their review```
+
+![Review Page](./Images/ReviewWireframe.png)
+
+[Figma Review Page](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=2-2&p=f&t=U8RQ2KmPq2H5JtxF-0)
+
 ## Brand Guide
 ![Brand Guide](./Images/BrandGuide.png)
 [Figma Brand Guide Link](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=48-260&t=wRfWX2jjeckPt4dR-1)
