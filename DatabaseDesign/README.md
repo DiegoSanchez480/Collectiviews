@@ -2,7 +2,25 @@
 ## Models
 - **1 - Conceptual Model**
 
-```Notes/Description```
+```markdown
+# Entities
+Our conceptual model has 3 entities: users, movies, and reviews. There are three main
+interactions that are between users and movies, users and reviews, and reviews and movies.
+
+# Relationships
+There is a many-to-many relationship between users and the movies they have watched. Many users
+can watch many movies. Many movies have also been watched by many users.
+
+A user can write many reviews but reviews are tied to only one user.
+
+For the relationship between reviews and movies, one movie can have many reviews but one review
+can only be tied to a single movie.
+
+# Main Actions
+1. User can watch many movies
+2. User writes many reviews, but each review is tied to a unique movie.
+3. Reviews populate the movie's review tab
+```
 
 ![Conceptual Model](./Models/ConceptualModel.png)
 - - -
