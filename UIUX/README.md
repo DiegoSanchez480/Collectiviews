@@ -53,6 +53,7 @@
 
 ![Search Movie Dropdown](./Images/searchMovieHomePg.png)
 
+[Figma Search Movie Dropdown](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=0-1&p=f&t=WdlQ8zmshfqj157A-0)
 
 - 8 - Search Movie Results Page
 
@@ -60,6 +61,7 @@
 
 ![Search Movie Results Page](./Images/searchMovieResultsPg.png)
 
+[Figma Search Movie Results Page](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=0-1&p=f&t=WdlQ8zmshfqj157A-0)
 ## Brand Guide
 ![Brand Guide](./Images/BrandGuide.png)
 [Figma Brand Guide Link](https://www.figma.com/design/avwZFveh8jLwZiGxuPMK3e/Fantastic-4?node-id=48-260&t=wRfWX2jjeckPt4dR-1)
