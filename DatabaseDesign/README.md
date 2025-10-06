@@ -79,7 +79,6 @@ can only be tied to a single Movie.
 
 ![Physical Model](./Models/PhysicalModel.png)
 
-Physical Model Source Code
 [Physical Model Source Code](./PhysicalModelSourceCode.dbml)
 - - -
 
