@@ -82,7 +82,7 @@ can only be tied to a single Movie.
 
 ## Table Initialization
 
-```Initializaiton Scripts includes all tables required for the Database.```
+```Initialization Scripts includes all tables required for the Database.```
 
 [Initialization Scripts](./InitializationScripts/init_collectiviews.sql)
 
