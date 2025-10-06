@@ -5,24 +5,24 @@
 ```markdown
 # Entities
 Our conceptual model has 3 entities:
-- Users: The consumer of the app. This entity holds information about the user's username, birth date, name, and reviews.
-- Movies: The main entity that users interact with either by watching or reviewing. This entity holds information such as
-movie ID, title, release date, and director
-- Reviews: This is the entity that holds the data about reviews such as the review ID, movie, date, rating, and content of the
-review. This entity connects users and movies.
+- Users: The consumer of the app. This entity holds information about the User's `username`, `birth date`, `name`, and `reviews`.
+- Movies: The main entity that Users interact with either by watching or reviewing. This entity holds information such as
+`movie ID`, `title`, `release date`, and `director`
+- Reviews: This is the entity that holds the data about Reviews such as the `review ID`, `movie`, `date`, `rating`, and `content` of the
+review. This entity connects Users and Movies.
 
 # Relationships
-There are three main interactions that are between users and movies, users and reviews, and reviews and movies.
-- There is a many-to-many relationship between users and the movies they have watched. Many users
-can watch many movies. Many movies have also been watched by many users.
-- A user can write many reviews but reviews are tied to only one user.
-- For the relationship between reviews and movies, one movie can have many reviews but one review
-can only be tied to a single movie.
+There are three main interactions that are between Users and Movies, Users and Reviews, and Reviews and Movies.
+- There is a many-to-many relationship between Users and the Movies they have watched. Many Users
+can watch many Movies. Many Movies have also been watched by many Users.
+- A User can write many reviews but Reviews are tied to only one User.
+- For the relationship between Reviews and Movies, one Movie can have many Reviews but one Review
+can only be tied to a single Movie.
 
 # Main Actions
-1. User can watch many movies
-2. User writes many reviews, but each review is tied to a unique movie.
-3. Reviews populate the movie's review tab
+1. User can watch many Movies
+2. User writes many Reviews, but each Review is tied to a unique Movie.
+3. Reviews populate the Movie's review tab
 ```
 
 ![Conceptual Model](./Models/ConceptualModel.png)
@@ -38,7 +38,43 @@ can only be tied to a single movie.
 - **3 - Physical Model**
 
 ```markdown
-# 
+# Entities
+- Movie
+  - Primary Key: `movieID`
+  - Attributes: `title`, `director`, `genre`, `releaseDate`
+  - Represents individual films in the database.
+
+- User
+  - Primary Key: `username`
+  - Attributes: `name`, `password_hash`, `birthYear`
+  - Represents registered users who can review and track movies.
+
+- Review
+  - Composite Primary Key: (`username`, `movieID`)
+  - Foreign Keys: 
+    - `username` → `user(username)`  
+    - `movieID` → `movie(movieID)`
+  - Attributes: `rating`, `writtenReview`, `reviewDate`
+  - Connects users and movies through ratings and written feedback.
+
+- WatchedMovie
+  - Composite Primary Key: (`username`, `movieID`)
+  - Foreign Keys:  
+    - `username` → `user(username)`  
+    - `movieID` → `movie(movieID)`
+  - Attribute: `watchedDate`
+  - Tracks which movies each user has watched and when.
+
+# Relationships
+- A User can write multiple Reviews, but only one per Movie (1:Many from User → Review, Many:1 from Review → Movie).  
+- A User can watch multiple Movies, each stored in WatchedMovie (Many:many so made WatchedMovie table).  
+- Movie and User are connected through both Review and WatchedMovie tables.
+
+# Main User Actions
+- Register and log in as a user.  
+- Browse or search for movies.  
+- Record movies they’ve watched.  
+- Write, edit, or view reviews and ratings for movies. 
 ```
 
 ![Physical Model](./Models/PhysicalModel.png)
