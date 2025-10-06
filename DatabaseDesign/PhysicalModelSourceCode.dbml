@@ -1,0 +1,36 @@
+Table movie {
+  movieID int [primary key, not null]
+  title varchar (100) [not null]
+  director varchar (50) [null]
+  genre varchar (30) [null]
+  releaseDate date [not null]
+}
+
+Table user {
+  username varchar (30) [primary key, not null]
+  name varchar (50) [null]
+  password_hash varchar (30) [not null]
+  birthDate date [not null]
+}
+
+Table review {
+  username varchar (30) [primary key, not null]
+  movieID int [primary key, not null]
+  rating tinyint [not null]
+  writtenReview varchar (2000) [null]
+  reviewDate datetime [not null]
+}
+
+Table watchedMovie {
+  username varchar (30) [primary key, not null]
+  movieID int [primary key, not null]
+  watchedDate date [not null]
+}
+
+Ref: user.username < review.username
+
+Ref: movie.movieID < review.movieID
+
+Ref: user.username < watchedMovie.username
+
+Ref: movie.movieID < watchedMovie.movieID
