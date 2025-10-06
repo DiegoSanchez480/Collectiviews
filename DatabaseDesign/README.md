@@ -88,7 +88,17 @@ can only be tied to a single Movie.
 
 [Docker Compose File](./docker-compose.yml)
 
-```INSERT INITIALIZATION INSTRUCTIONS FOR DOCKER/DBEAVER FOLLOWING ASSIGNMENT RULES```
+### How to use a Docker compose file to create a database in MariaDB
+1. Create or recieve a docker-compose.yml file to act as a blueprint for the Docker container you wish to set up
+2. Place the docker-compose.yml file in a directory with an SQL init file
+3. Navigate to the directory in your computer's terminal
+4. Run the command `docker compose up` to build the container
+5. In DBeaver, navigate to the top left of the screen and click the "New Database Connection" button to open the new connection menu
+6. Select the database driver you wish to use (this should be specified in the docker-compose.yml file) and click next
+7. Under the "Server" menu, ensure that the port listed matches the one mapped in the compose file
+8. Under the "Authentication" menu, enter the username and password displayed in the compose file
+9. Click "Finish" and DBeaver will connect to the container and you should be able to interact with the database
+
 
 ## Business Related SQL Queries
 
