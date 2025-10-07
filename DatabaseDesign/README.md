@@ -30,7 +30,47 @@ can only be tied to a single Movie.
 
 - **2 - Logical Model**
 
-```Our logical model has four tables. The extra table, watchedMovie, comes from the watched relation from the conceptual model. The purpose of the table is to resolve the many to many relationship between user and movie by introducing a composite key. The composite key ensures that a user can only have one instance of a movie as watched. The user table has a username as the primary key, movieId for movie, and username and movieId for review. The watchedMovie table has a composite key of username and movieId which are foreign keys from user and movie tables respectively. This effectively connects the user and movie tables. Finally, the review table has username and movieId as foreign keys to link both user and movie tables to review.```
+```markdown
+# Entities
+- Movie
+  - Primary Key: `movieID`
+  - Attributes: `title`, `director`, `genre`, `releaseDate`
+  - Represents movies in the database.
+
+- User
+  - Primary Key: `username`
+  - Attributes: `name`, `password_hash`, `birthDate`
+  - Represents registered users who can review and track movies.
+
+- Review
+  - Composite Primary Key: (`username`, `movieID`)
+  - Foreign Keys: 
+    - `username` → `user(username)`  
+    - `movieID` → `movie(movieID)`
+  - Attributes: `rating`, `writtenReview`, `reviewDate`
+  - Connects user and movie tables through reviews.
+
+- WatchedMovie
+  - Composite Primary Key: (`username`, `movieID`)
+  - Foreign Keys:  
+    - `username` → `user(username)`  
+    - `movieID` → `movie(movieID)`
+  - Attribute: `watchedDate`
+  - Tracks movies watched by specific users, including the date watched.
+
+# Relationships
+The logical model has four tables in total. The watchedMovie table was added to resolve the many to many relationship between user and movie tables.
+
+- Composite key (`username`,  `movieID`) in watchedMovie ensures that each user can only have one instance of a specific movie labeled as watched.
+- A user can write multiple reviews but only one review per movie based on the user and review table relation.
+
+# Main User Actions
+- Sign up / Sign in to their account
+- Browse movie
+- Leave reviews / ratings
+- View / edit reviews
+- Add movies to a watched list
+```
 
 ![Logical Model](./Models/LogicalModel.png)
 - - -
@@ -46,7 +86,7 @@ can only be tied to a single Movie.
 
 - User
   - Primary Key: `username`
-  - Attributes: `name`, `password_hash`, `birthYear`
+  - Attributes: `name`, `password_hash`, `birthDate`
   - Represents registered users who can review and track movies.
 
 - Review
