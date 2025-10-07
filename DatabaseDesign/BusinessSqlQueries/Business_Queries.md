@@ -2,16 +2,19 @@
 
 ### 1
 ```sql
--- return all movies watched by a user and when they watched them
+-- returns all movies reviewed by a user, the review content, and when they watched each | This is to be used in a dashboard or home menu for users
 select
   m.title,
-  wm.watchedDate
+  wm.watchedDate,
+  r.rating,
+  r.writtenReview
 from
   movie m
 inner join watchedMovie wm on m.movieID = wm.movieID
+left join review r on (m.movieID = r.movieID and wm.username = r.username)
 where wm.username = 'username'
 order by
-  m.title asc;
+  r.reviewDate desc;
 ```
 
 ### 2
@@ -33,8 +36,8 @@ order by
 ```sql
 -- return all written reviews left on a specific movie
 select
-  m.title
-  r.username
+  m.title,
+  r.username,
   r.writtenReview
 from
   review r

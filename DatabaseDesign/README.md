@@ -119,12 +119,12 @@ The logical model has four tables in total. The watchedMovie table was added to 
 
 ![Physical Model](./Models/PhysicalModel.png)
 
-[Physical Model Source Code](./PhysicalModelSourceCode.dbml)
+[Physical Model Source Code](./Models/PhysicalModelSourceCode.dbml)
 - - -
 
 ## Table Initialization
 
-```Initialization Scripts includes all tables required for the Database.```
+```Initialization Scripts includes all tables, foreign keys, and sample data needed for the database```
 
 [Initialization Scripts](./InitializationScripts/init_collectiviews.sql)
 
@@ -144,6 +144,6 @@ The logical model has four tables in total. The watchedMovie table was added to 
 
 ## Business Related SQL Queries
 
-```SQL Queries file contains descriptions of each query.```
+```SQL Queries correspond to logical business needs and contain short return descriptions before each query```
 
 [SQL Queries](./BusinessSqlQueries/Business_Queries.md)
