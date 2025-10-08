@@ -82,5 +82,5 @@ WHERE genre = "Horror";
 -- Return the age of a user
 SELECT username, name, birthDate,
        TIMESTAMPDIFF(YEAR, birthDate, CURDATE()) AS age
-FROM users;
+FROM user;
 ```
