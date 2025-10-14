@@ -1,10 +1,10 @@
-CREATE DATABASE Collectiviews_DB;
+CREATE DATABASE Collectiviews;
 
 CREATE OR REPLACE ROLE Fantastic4_DBA;
 
-GRANT ALL PRIVILEGES ON Collectiviews_DB TO Fantastic4_DBA;
+GRANT ALL PRIVILEGES ON Collectiviews TO Fantastic4_DBA;
 
-USE Collectiviews_DB;
+USE Collectiviews;
 
 CREATE TABLE `movie` (
   `movieID` int PRIMARY KEY NOT NULL,
