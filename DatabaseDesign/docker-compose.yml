@@ -3,7 +3,7 @@ version: '3.8'
 services:
   mariadb:
     image: mariadb:latest
-    container_name: WSU_4900_DB_Design
+    container_name: Collectiviews
     restart: always
     volumes:
       - ./init_collectiviews.sql:/docker-entrypoint-initdb.d/init.sql
