@@ -6,7 +6,7 @@ services:
     container_name: Collectiviews
     restart: always
     volumes:
-      - ./init_collectiviews.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./InitializationScripts/init_collectiviews.sql:/docker-entrypoint-initdb.d/init.sql
       # - ./data:/var/lib/mysql                   # Mount a volume for data persistence (optional)
     environment:
       - MYSQL_ROOT_PASSWORD=password
