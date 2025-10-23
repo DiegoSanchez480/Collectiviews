@@ -19,17 +19,17 @@ order by
 
 ### 2
 ```sql
--- return all the ratings for all movies a user has watched in descending order
-select
-  r.username,
+SELECT 
+  u.username,
   m.title,
-  r.rating
-from
-  review r
-inner join movie m on r.movieID = m.movieID
-where r.username = 'username'
-order by
-  r.rating desc;
+  r.rating,
+  r.reviewDate,
+  wm.watchedDate
+FROM `user` u
+JOIN watchedMovie wm ON u.username = wm.username
+JOIN movie m ON wm.movieID = m.movieID
+LEFT JOIN review r ON wm.username = r.username AND wm.movieID = r.movieID
+ORDER BY r.rating DESC;
 ```
 
 ### 3
