@@ -61,7 +61,7 @@ SELECT
   rating
 FROM
   review
-JOIN
+INNER JOIN
   movie
 ON
   review.movieID = movie.movieID
