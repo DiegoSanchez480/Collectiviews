@@ -16,7 +16,7 @@ CREATE TABLE `user` (
   username VARCHAR(30) NOT NULL PRIMARY KEY,
   name VARCHAR(50),
   password_hash VARCHAR(30) NOT NULL,
-  birthYear DATE NOT NULL
+  birthDate DATE NOT NULL
 );
 
 -- Review table
@@ -42,7 +42,7 @@ CREATE TABLE watchedMovie (
 );
 
 -- Insert users
-INSERT INTO `user` (username, name, password_hash, birthYear) VALUES
+INSERT INTO `user` (username, name, password_hash, birthDate) VALUES
 ('jdoe', 'John Doe', 'pass123', '1995-07-21'),
 ('asmith', 'Alice Smith', 'alice456', '2000-01-14'),
 ('bwayne', 'Bruce Wayne', 'batman', '1980-02-14'),
