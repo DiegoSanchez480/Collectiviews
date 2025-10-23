@@ -18,6 +18,7 @@ order by
 ```
 
 ### 2
+-- Return all ratings for all moviesa user has watched in descending order
 ```sql
 SELECT 
   u.username,
