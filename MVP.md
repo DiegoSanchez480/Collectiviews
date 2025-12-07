@@ -1,4 +1,4 @@
-# Project Proposal: Movie Review App
+# Project Proposal: Collectiviews
 
 # The MVP
 
