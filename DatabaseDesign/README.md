@@ -74,7 +74,7 @@ The logical model has four tables in total. The watchedMovie table was added to 
 - Add movies to a watched list
 ```
 
-![Logical Model](./Models/LogicalModel.png)
+![Logical Model](./Models/UpdatedLogicalModel.png)
 
 ### Changes to Final Project Logical Model
 
@@ -129,7 +129,7 @@ The logical model has four tables in total. The watchedMovie table was added to 
 - Write, edit, or view reviews and ratings for movies. 
 ```
 
-![Physical Model](./Models/PhysicalModel.png)
+![Physical Model](./Models/UpdatedPhysicalModel.png)
 
 ### Changes to Final Project Physical Model
 
