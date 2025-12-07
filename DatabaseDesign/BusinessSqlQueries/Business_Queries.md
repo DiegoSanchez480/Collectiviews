@@ -1,6 +1,35 @@
 # SQL Queries
 
+## Accomplished Business Queries
+
+### Return Written Reviews for a Specific Movie
+
+```sql
+-- return all written reviews left on a specific movie
+select
+  m.title,
+  r.username,
+  r.writtenReview
+from
+  review r
+inner join movie m on m.movieID = r.movieID
+where m.title = 'title'
+order by
+  r.username asc;
+```
+
+### Return All Usernames
+
+```sql
+-- return all usernames
+SELECT username
+FROM user;
+```
+
+## Future Business Queries
+
 ### 1
+
 ```sql
 -- returns all movies reviewed by a user, the review content, and when they watched each | This is to be used in a dashboard or home menu for users
 select
@@ -18,6 +47,7 @@ order by
 ```
 
 ### 2
+
 -- Return all ratings for all moviesa user has watched in descending order
 ```sql
 SELECT 
@@ -34,28 +64,7 @@ ORDER BY r.rating DESC;
 ```
 
 ### 3
-```sql
--- return all written reviews left on a specific movie
-select
-  m.title,
-  r.username,
-  r.writtenReview
-from
-  review r
-inner join movie m on m.movieID = r.movieID
-where m.title = 'title'
-order by
-  r.username asc;
-```
 
-### 4
-```sql
--- return all usernames
-SELECT username
-FROM user;
-```
-
-### 5
 ```sql
 -- return all individual numerical ratings of a specific movie
 SELECT
@@ -70,7 +79,8 @@ WHERE
   movie.title = 'Fantastic 4';
 ```
 
-### 6
+### 4
+
 ```sql
 -- Find movies from a specific genre
 SELECT title, director
@@ -78,7 +88,8 @@ FROM movie
 WHERE genre = "Horror";
 ```
 
-### 7
+### 5
+
 ```sql
 -- Return the age of a user
 SELECT username, name, birthDate,
