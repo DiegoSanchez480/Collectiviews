@@ -158,13 +158,16 @@ The logical model has four tables in total. The watchedMovie table was added to 
 4. Run the command `docker compose up` to build the container
 5. In DBeaver, navigate to the top left of the screen and click the "New Database Connection" button to open the new connection menu
 6. Select the database driver you wish to use (this should be specified in the docker-compose.yml file) and click next
-7. Under the "Server" menu, ensure that the port listed matches the one mapped in the compose file
-8. Under the "Authentication" menu, enter the username and password displayed in the compose file
-9. Click "Finish" and DBeaver will connect to the container and you should be able to interact with the database
+7. Under the "Server" menu, ensure that the port listed matches the one mapped in the docker compose file
+8. Under the "Authentication" menu, enter the username and password displayed in the docker compose file
+   1. For Example of user and password:
+      1. `MYSQL_USER=user`
+      2. `MYSQL_PASSWORD=password`
+9.  Click "Finish" and DBeaver will connect to the container and you should be able to interact with the database
 
 
 ## Business Related SQL Queries
 
 ```SQL Queries correspond to logical business needs and contain short return descriptions before each query```
 
-[SQL Queries](./BusinessSqlQueries/Business_Queries.md)
+Queries that were implemented and future queries yet to be implemented can be viewed here: [SQL Queries](./BusinessSqlQueries/Business_Queries.md)
