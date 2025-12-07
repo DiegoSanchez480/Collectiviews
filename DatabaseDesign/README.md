@@ -1,6 +1,8 @@
 # Group - Database Design
+
 ## Models
-- **1 - Conceptual Model**
+
+### 1 - Conceptual Model
 
 ```markdown
 # Entities
@@ -28,7 +30,7 @@ can only be tied to a single Movie.
 ![Conceptual Model](./Models/ConceptualModel.png)
 - - -
 
-- **2 - Logical Model**
+### 2 - Logical Model
 
 ```markdown
 # Entities
@@ -39,7 +41,7 @@ can only be tied to a single Movie.
 
 - User
   - Primary Key: `username`
-  - Attributes: `name`, `password_hash`, `birthDate`
+  - Attributes: `name`, `birthDate`
   - Represents registered users who can review and track movies.
 
 - Review
@@ -73,9 +75,19 @@ The logical model has four tables in total. The watchedMovie table was added to 
 ```
 
 ![Logical Model](./Models/LogicalModel.png)
+
+### Changes to Final Project Logical Model
+
+```markdown
+# User Table Changes
+
+- Attributes
+  - No longer has `password_hash` attribute as we did not get to implement secure sign in
+```
+
 - - -
 
-- **3 - Physical Model**
+### 3 - Physical Model
 
 ```markdown
 # Entities
@@ -86,7 +98,7 @@ The logical model has four tables in total. The watchedMovie table was added to 
 
 - User
   - Primary Key: `username`
-  - Attributes: `name`, `password_hash`, `birthDate`
+  - Attributes: `name`,`birthDate`
   - Represents registered users who can review and track movies.
 
 - Review
@@ -118,6 +130,15 @@ The logical model has four tables in total. The watchedMovie table was added to 
 ```
 
 ![Physical Model](./Models/PhysicalModel.png)
+
+### Changes to Final Project Physical Model
+
+```markdown
+# User Table Changes
+
+- Attributes
+  - No longer has `password_hash` attribute as we did not get to implement secure sign in
+```
 
 [Physical Model Source Code](./Models/PhysicalModelSourceCode.dbml)
 - - -
