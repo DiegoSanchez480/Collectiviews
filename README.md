@@ -7,6 +7,9 @@ Collectiviews is a web application that aims to allow casual movie fans to find 
 Upon opening Collectiviews, the user will be sent to a login page. After logging in, it will redirect to the home page. On this page is a list of movies we have in our database. Users can search through this list and find movies that they have seen. Once they have found one, they are able to click on the movie and it will take them to the individual movie page. On this page, the user can mark the movie as watched and state when they viewed it. They can also click the review button, which opens a dialogue box where they are able to write their thoughts. They can submit and the review will then display on the movie page. All reviews for the movie are also visible at the bottom of the page so users can see what others think.
 
 ## Goals
+- Allow users to log in
+- Provide a display of movies in the database
+- Allow users to leave a written review on a movie
 
 ## Project Demo
 
