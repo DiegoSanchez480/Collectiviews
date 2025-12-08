@@ -2,12 +2,12 @@
 
 ## Contents
 
-| Folder/File | Description |
-|-------------|-------------|
-| `Models/` | Contains database model diagrams (Conceptual, Logical, Physical) and source code |
-| `BusinessSqlQueries/` | SQL queries for business-related operations |
+| Folder/File              | Description |
+|--------------------------|-------------|
+| `Models/`                | Contains database model diagrams (Conceptual, Logical, Physical) and source code |
+| `BusinessSqlQueries/`    | SQL queries for business-related operations |
 | `InitializationScripts/` | SQL scripts for table creation and sample data |
-| `docker-compose.yml` | Docker configuration for setting up the MariaDB database |
+| `docker-compose.yml`     | Docker configuration for setting up the MariaDB database |
 
 ## Models
 
