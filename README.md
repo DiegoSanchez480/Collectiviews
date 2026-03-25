@@ -36,8 +36,8 @@ Upon opening Collectiviews, the user will be sent to a login page. After logging
 [Database Design](/DatabaseDesign/)
 - This directory contains our conceptual, logical, and physical models that helped lay out our database design, as well as the initialization script used to build our database and some example queries to retrieve data from the database.
 
-[API Repository](https://github.com/WSU-kduncan/cs4900-api-fan4)
+[API Repository](https://github.com/DiegoSanchez480/CollectiviewsAPI))
 - This is our API repository, where we constructed the API that was used to communicate with our database and retrieve, add, and delete data.
 
-[Web Design Repository](https://github.com/WSU-kduncan/cs4900-ui-fan4)
+[Web Design Repository](https://github.com/DiegoSanchez480/CollectiviewsUI)
 - This is our Web Design repository, where we created the design for our web app and set up the functionality to communicate between the front end and the API to access the database and interact straight from the web page.
